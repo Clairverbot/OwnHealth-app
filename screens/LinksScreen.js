@@ -11,12 +11,12 @@ export default class LinksScreen extends React.Component {
       messages: [
         {
           _id: 1,
-          text: 'Hello developer',
+          text: 'Hello john',
           createdAt: new Date(),
           user: {
             _id: 2,
             name: 'React Native',
-            avatar: 'https://placeimg.com/140/140/any',
+            avatar: require('../assets/images/mascot.png'),
           },
         }
       ]
