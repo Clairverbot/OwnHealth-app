@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
-import LinksScreen from '../screens/LinksScreen';
+import ChatScreen from '../screens/ChatScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 
 const BottomTab = createBottomTabNavigator();
@@ -27,7 +27,7 @@ export default function BottomTabNavigator({ navigation, route }) {
       />
       <BottomTab.Screen
         name="Chat"
-        component={LinksScreen}
+        component={ChatScreen}
         options={{
           title: 'Chat',
           tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-chatbubbles" />,
